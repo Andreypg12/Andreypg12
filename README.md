@@ -100,10 +100,6 @@ and I love building things that make real work faster and easier for people.
   <img src="assets/card-stats-dark.svg" width="480" alt="GitHub statistics">
 </picture>
 
-<br>
-
-<img src="assets/metrics.languages.svg" height="165" alt="most used languages">
-
 </div>
 
 ---
