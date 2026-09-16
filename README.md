@@ -48,7 +48,7 @@ and I love building things that make real work faster and easier for people.
 
 ## my perfect stack`
 
-<img src="https://skillicons.dev/icons?i=java,csharp,python,ts,js,react,fastapi,postgres,mysql,git,github,vscode&perline=6" alt="tech stack">
+<img src="https://skillicons.dev/icons?i=docker,java,csharp,sqlserver,visualstudio,postgres,ts,js,react,angular,github&perline=6" alt="tech stack">
 
 </div>
 
