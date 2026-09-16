@@ -18,7 +18,7 @@ from scipy.spatial.distance import cdist
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SOURCE = ROOT / "assets/source/mrr.png"
+SOURCE = ROOT / "assets/source/apg.png"
 ASSETS = ROOT / "assets"
 LOGOS = Path(__file__).resolve().parent / "logos"
 DATA = Path(__file__).resolve().parent / "data"
@@ -30,21 +30,21 @@ TRAVELLER_COUNT = 900
 SEED = 314159
 
 ROWS = [
-    ("Subject", "Emmi"),
-    ("Role", "Blockchain Engineer · Tech Lead"),
-    ("Origin", "Bolivia"),
-    ("Education", "Community · LATAM"),
+    ("Subject", "Andrey"),
+    ("Role", "Software Engineer in Training"),
+    ("Origin", "Costa Rica"),
+    ("Education", "Software Engineering"),
     ("Status", "Building + Learning + Shipping"),
-    ("ToolChain", "Sublime · Cursor · Git"),
-    ("Core.Lang", "TypeScript · Rust · Solidity"),
-    ("Core.Frontend", "React · Next.js · Three.js · Tailwind"),
-    ("Core.Backend", "Node · Python"),
-    ("Core.Database", "Postgres · Supabase"),
-    ("Core.Infra", "Vercel · Docker · AWS"),
-    ("Grid.Mail", "—"),
-    ("Grid.LinkedIn", "/in/emmi-aguilar-rivero"),
-    ("Grid.GitHub", "emmi-lili"),
-    ("Grid.X", "@emmcriptada"),
+    ("ToolChain", "VS Code · Git · GitHub"),
+    ("Core.Lang", "Java · C# · Python · TypeScript"),
+    ("Core.Frontend", "React · JavaScript"),
+    ("Core.Backend", "FastAPI · Python · Node"),
+    ("Core.Database", "SQL Server · MySQL · PostgreSQL"),
+    ("Core.Infra", "GitHub · Docker"),
+    ("Grid.Mail", "andreyperez109@gmail.com"),
+    ("Grid.LinkedIn", "/in/andrey-perez-072b42422"),
+    ("Grid.GitHub", "Andreypg12"),
+    ("Grid.X", "—"),
 ]
 
 THEMES = {
@@ -282,7 +282,7 @@ def render_svg(
         '<svg xmlns="http://www.w3.org/2000/svg" '
         f'width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
         'aria-labelledby="title desc">',
-        "<title id=\"title\">Emmi's live system profile</title>",
+        "<title id=\"title\">Andrey's live system profile</title>",
         '<desc id="desc">Animated terminal profile with a dithered portrait and '
         "Rust, code, and Stellar silhouettes.</desc>",
         "<defs>",
@@ -401,7 +401,7 @@ def render_svg(
             f'stroke="{t["chrome"]}"/>',
             f'<text x="1055" y="111" text-anchor="middle" fill="{t["chrome"]}" '
             'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" '
-            'font-weight="700">@emmi-lili</text>',
+            'font-weight="700">@Andreypg12</text>',
         ]
     )
 
@@ -466,7 +466,7 @@ def main() -> None:
         for name, points in sampled.items():
             np.save(DATA / f"{name}-{theme}.npy", points)
         svg = render_svg(theme, portraits[theme], sampled, rng)
-        output = ASSETS / f"banner-{theme}.v9.svg"
+        output = ASSETS / f"banner-{theme}.v10.svg"
         output.write_text(svg, encoding="utf-8")
         byte_size = output.stat().st_size
         print(
